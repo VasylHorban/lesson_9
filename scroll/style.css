@@ -15,7 +15,13 @@ header, footer{
     background: #ebebeb;
     text-align: center;
     height: 100vh;
-    position: relative
+/*    max-height: 100vh;*/
+/*    position: relative;*/
+}
+.block{
+    position: relative;
+    height: 100%;
+    widows: 100%;
 }
 main{
     height: 100vh;
@@ -23,30 +29,36 @@ main{
 }
 .btn{
     position: absolute;
-    width: 200px;
+    width: 300px;
     text-align: center;
     cursor: pointer;
-    transition: all ease .4s;
+    transition: all ease 1s;
     font-weight: bold;
     letter-spacing: 1.5px;
-    margin-left: -100px;
+    margin-left: -150px;
+    left: 50%;
+/*    top: 50%;*/
 }
 .btn:hover{
     color: #f45b5b;
 }
 .btn-down{
     bottom: 30%;
+    font-size: 16px;
     
 }
 .btn-up{
     bottom: 50%;
     font-size: 36px;
+    
 }
 
 .left-slide{
+    margin-top: 10vh;
     padding: 30px 0;
     width: 150px;
     border-bottom: 3px solid #f45b5b;
+    transition: all ease 1s;
 }
 .left-slide h2{
     width: 200px;
@@ -57,6 +69,7 @@ main{
     display: block;
     float: right;
     margin-top: 20vh;
+    transition: all ease 1s;
 }
 .right-slide::after{
     content: '';
