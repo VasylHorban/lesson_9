@@ -38,6 +38,10 @@ body {
     margin: 10px 5px;
     padding: 5px;
 }
+.task-list ul li{
+    list-style: none;
+    font-size: 14px;
+}
 .left-list {
     border-right: 2px solid black
 }
